@@ -67,7 +67,7 @@ async def vote(ctx,
     }
     
     collection.insert_many([dict])
-    print("%s vote submitted by " + str(user) % (league.upper()))
+    print("%s vote submitted by %s" % (league.upper(), str(user)))
 
 # Bot Run
 bot.run = bot.run(botToken)
